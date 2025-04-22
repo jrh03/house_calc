@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent Calculator</title>
+
+    <!-- Link to your local Bootstrap CSS file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+</head>
+<body class="p-4">
+
+<div class="container">
+    <h1 class="mb-4">Rent Calculator</h1>
+    <p>Total Rent: <strong id="display-rent"></strong></p>
+    <p>Wifi: <strong id="wifi-cost"></strong></p>
+    <p>Energy: <strong id="energy-cost"></strong></p>
+    <p>Water: <strong id="water-cost"></strong></p>
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="ten-month-toggle" checked>
+        <label class="form-check-label" for="ten-month-toggle">
+            Split council tax over 10 months
+        </label>
+    </div>
+    <!-- You'll add your inputs and housemate sections here -->
+
+
+    <div class="card mb-4 p-3" id="housemate-1">
+        <h5 class="card-title">Jack</h5>
+
+        <!-- Rent Share -->
+        <div class="mb-3">
+            <label for="rent-1" class="form-label">Rent Share (£)</label>
+            <input type="number" class="form-control" id="rent-1" value="600" min="0">
+        </div>
+
+        <!-- Is Student -->
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="student-1" checked>
+            <label class="form-check-label" for="student-1">
+                Is a Student
+            </label>
+        </div>
+
+        <!-- Pays Council Tax -->
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="pays-tax-1" checked>
+            <label class="form-check-label" for="pays-tax-1">
+                Pays Council Tax
+            </label>
+        </div>
+
+        <!-- Display Total -->
+        <p class="mt-3">Total Owed: <strong id="total-owed-1">£0.00</strong></p>
+    </div>
+
+    <div class="card mb-4 p-3" id="housemate-2">
+        <h5 class="card-title">Becky</h5>
+
+        <!-- Rent Share -->
+        <div class="mb-3">
+            <label for="rent-1" class="form-label">Rent Share (£)</label>
+            <input type="number" class="form-control" id="rent-2" value="600" min="0">
+        </div>
+
+        <!-- Is Student -->
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="student-2">
+            <label class="form-check-label" for="student-2">
+                Is a Student
+            </label>
+        </div>
+
+        <!-- Pays Council Tax -->
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="pays-tax-2" checked>
+            <label class="form-check-label" for="pays-tax-2">
+                Pays Council Tax
+            </label>
+        </div>
+
+        <!-- Display Total -->
+        <p class="mt-3">Total Owed: <strong id="total-owed-2">£0.00</strong></p>
+    </div>
+
+    <div class="card mb-4 p-3" id="housemate-3">
+        <h5 class="card-title">Downstairs Double</h5>
+
+        <!-- Rent Share -->
+        <div class="mb-3">
+            <label for="rent-1" class="form-label">Rent Share (£)</label>
+            <input type="number" class="form-control" id="rent-3" value="460" min="0">
+        </div>
+
+        <!-- Is Student -->
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="student-3">
+            <label class="form-check-label" for="student-3">
+                Is a Student
+            </label>
+        </div>
+
+        <!-- Pays Council Tax -->
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="pays-tax-3" >
+            <label class="form-check-label" for="pays-tax-3">
+                Pays Council Tax
+            </label>
+        </div>
+
+        <!-- Display Total -->
+        <p class="mt-3">Total Owed: <strong id="total-owed-3">£0.00</strong></p>
+    </div>
+
+    <div class="card mb-4 p-3" id="housemate-4">
+        <h5 class="card-title">Upstairs Single</h5>
+
+        <!-- Rent Share -->
+        <div class="mb-3">
+            <label for="rent-1" class="form-label">Rent Share (£)</label>
+            <input type="number" class="form-control" id="rent-4" value="0" min="0">
+        </div>
+
+        <!-- Is Student -->
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="student-4">
+            <label class="form-check-label" for="student-4">
+                Is a Student
+            </label>
+        </div>
+
+        <!-- Pays Council Tax -->
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="pays-tax-4">
+            <label class="form-check-label" for="pays-tax-4">
+                Pays Council Tax
+            </label>
+        </div>
+
+        <!-- Pays Utilities -->
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="pays-utilities-4">
+            <label class="form-check-label" for="pays-utilities-4">
+                Pays Utilities
+            </label>
+        </div>
+
+        <!-- Display Total -->
+        <p class="mt-3">Total Owed: <strong id="total-owed-4">£0.00</strong></p>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS bundle (only if you need Bootstrap components like modals) -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Your main script -->
+<script src="js/main.js"></script>
+</body>
+</html>
